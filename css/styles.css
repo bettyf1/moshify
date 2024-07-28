@@ -185,6 +185,7 @@ a {
     fill: var(--color-primary);
 }
 
+
 .icon--white {
     fill: #fff;
 }
@@ -555,4 +556,38 @@ a {
         justify-self: start;
         margin: 0 2rem;
     }
+}
+
+/*collapsibles*/
+.collapsible_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.collapsible_heading {
+    margin-top: 0;
+    font-size: 3rem;
+
+}
+
+.collapisble__chevron {
+    transform: rotate(130deg);
+    transition: transform 0.3s;
+}
+
+.collapsible__content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.collapsible--expanded .collapisble__chevron {
+    transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible__content {
+    max-height: 100vh;
+    opacity: 1;
+
 }

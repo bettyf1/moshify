@@ -801,3 +801,23 @@ a {
         max-width: 2000px;
     }
 }
+
+/*Features*/
+.feature {
+    gap: 4rem 2rem;
+    margin-bottom: 5rem;
+}
+
+.feature__block {
+    margin-bottom: 12rem;
+}
+
+.feature__heading {
+    margin-top: 1rem 0;
+}
+
+.feature__image {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {}
